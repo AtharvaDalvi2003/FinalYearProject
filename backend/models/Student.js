@@ -21,7 +21,7 @@ const studentSchema = new mongoose.Schema(
     // ✅ SINGLE CLASS (IMPORTANT)
     class: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "classes", // MUST MATCH model name
+      ref: "Class", // MUST MATCH model name
       default: null,
     },
 

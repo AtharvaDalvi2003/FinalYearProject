@@ -1,5 +1,6 @@
 const express = require("express");
 const protect = require("../middleware/protect");
+
 const {
   createClass,
   getMyClasses,
@@ -13,7 +14,7 @@ const router = express.Router();
 // CREATE CLASS
 router.post("/create", protect, createClass);
 
-// GET TEACHER CLASSES
+// GET TEACHER CLASSES  ✅ THIS WAS BREAKING
 router.get("/my-classes", protect, getMyClasses);
 
 // LINK SUBJECT TO CLASS
