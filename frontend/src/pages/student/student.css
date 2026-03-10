@@ -1,0 +1,137 @@
+/* LAYOUT */
+.student-layout {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #6c63ff 0%, #172554 100%);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* SIDEBAR */
+.student-sidebar {
+  width: 240px;
+  background: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-sidebar .logo {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #4f46e5;
+}
+
+.student-sidebar button {
+  padding: 12px;
+  margin-bottom: 8px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.student-sidebar button:hover,
+.student-sidebar .active {
+  background: #eef2ff;
+}
+
+.student-sidebar .logout {
+  margin-top: auto;
+  background: #ef4444;
+  color: white;
+}
+
+/* CONTENT */
+.student-content {
+  flex: 1;
+  padding: 30px;
+  color: white;
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.breadcrumb {
+  margin: 10px 0 25px;
+  opacity: 0.8;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.stat-card .icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.icon.red { background: #fee2e2; }
+.icon.orange { background: #ffedd5; }
+.icon.green { background: #dcfce7; }
+.icon.blue { background: #dbeafe; }
+
+/* CLASS CARD */
+.class-section {
+  margin-top: 40px;
+}
+
+.class-card {
+  background: white;
+  color: #111;
+  padding: 25px;
+  border-radius: 14px;
+  width: 320px;
+}
+
+.class-card .teacher {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.progress {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #ef4444;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: #6c63ff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.error-card {
+  border-left: 6px solid red;
+}
